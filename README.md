@@ -4,6 +4,10 @@ Este é um case desenvolvido para demonstrar a criação de uma aplicação de s
 
 0 projeto foi desenvolvido utilizando **TypeScript** e **Next.js**, garantindo uma aplicação escalável e de alto desempenho, focada em uma experiência de usuário ágil e eficiente.
 
+<video width="100%" height="auto" controls>
+  <source src="https://github.com/allanferreira/personal-loan-app/blob/main/public/intro.webm?raw=true" type="video/webm">
+</video>
+
 ## Rodando o projeto
 
 **Clone o repositório:**
