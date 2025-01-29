@@ -1,0 +1,27 @@
+.personalLoanLogo {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-color);
+  strong {
+    font-weight: 600;
+  }
+  &.md {
+    gap: 0.5rem;
+    font-size: 2.2rem;
+  }
+
+  &.lg {
+    gap: 1rem;
+    font-size: 4rem;
+  }
+}
+
+.md .logo {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.lg .logo {
+  width: 5.6rem;
+  height: 5.6rem;
+}

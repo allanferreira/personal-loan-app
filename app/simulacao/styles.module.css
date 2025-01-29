@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  gap: 10rem;
+  justify-content: space-between;
+  min-height: calc(100vh - 8rem);
+  @media (max-width: 980px) {
+    min-height: auto;
+    gap: 0;
+    flex-direction: column;
+  }
+  & > div {
+    flex: 1;
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: 980px) {
+    min-height: inherit;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: 980px) {
+    min-height: inherit;
+  }
+}

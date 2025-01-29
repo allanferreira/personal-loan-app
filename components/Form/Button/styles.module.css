@@ -1,0 +1,22 @@
+.button {
+  font-weight: 600;
+  font-size: 2rem;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.unfilled {
+  color: var(--primary-color);
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+}
+
+.filled {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: 0;
+}

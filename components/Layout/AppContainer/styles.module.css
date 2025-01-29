@@ -1,0 +1,11 @@
+.appContainer {
+  margin: 4rem 1.6rem;
+  @media (min-width: 1200px) {
+    margin: auto;
+    width: 119rem;
+  }
+  @media (min-width: 980px) and (max-width: 1200px) {
+    margin: auto;
+    width: 980px;
+  }
+}
