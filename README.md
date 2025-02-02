@@ -58,6 +58,10 @@ As tecnologias mais modernas foram utilizadas para garantir um código limpo, or
 
 ## Organização e padrões
 
+### Diagrama
+
+![personal-loan-arquitetura](https://github.com/user-attachments/assets/4a3cbc2d-bd8c-4378-9184-86ee1853119a)
+
 ### Arquitetura Baseada em Componentes
 
 Cada componente é responsável por uma renderização visual específica e pelo seu próprio controle da interação com o usuário. Os componentes são organizados pelo seu propósito, sua características e relação com o negócio.
