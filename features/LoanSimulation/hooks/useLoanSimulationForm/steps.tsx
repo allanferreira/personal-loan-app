@@ -2,7 +2,7 @@ import { GoalStep, PersonalInfoStep } from "@/features/LoanSimulation"
 import {
   goalStepSchema,
   personalInfoStepSchema,
-} from "@/features/LoanSimulation"
+} from "@/domain/loanSimulation/validationSchemas"
 
 const steps = [
   {

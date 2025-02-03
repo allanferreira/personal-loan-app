@@ -9,17 +9,11 @@ import useLoanSimulationResult from "../hooks/useLoanSimulationResult/__mocks__/
 import Steppable from "../types/Steppable"
 import FormValues from "../types/FormValues"
 
-import {
-  goalStepSchema,
-  personalInfoStepSchema,
-} from "../utils/validationSchemas"
 import { formValuesToApiFormat } from "../utils/format"
 
 import { LoanSimulationProvider, useLoanSimulationStore } from "../store"
 
 export {
-  goalStepSchema,
-  personalInfoStepSchema,
   useLoanSimulationResult,
   GoalStep,
   PersonalInfoStep,
