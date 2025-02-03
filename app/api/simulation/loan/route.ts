@@ -1,9 +1,4 @@
-import { ValidationError } from "yup"
 import loanSimulation from "@/domain/loanSimulation"
-import {
-  goalStepSchema,
-  personalInfoStepSchema,
-} from "@/domain/loanSimulation/validationSchemas"
 import { NextResponse } from "next/server"
 
 export async function POST(req: Request) {
@@ -14,15 +9,6 @@ export async function POST(req: Request) {
       { error: "The keys 'loan', 'installments' and 'birthday' are required" },
       { status: 400 }
     )
-  }
-
-  try {
-    await goalStepSchema.validate(data)
-    await personalInfoStepSchema.validate(data)
-  } catch (err) {
-    console.error(err)
-    const error = err instanceof ValidationError ? err.errors : "Invalid Format"
-    return NextResponse.json({ error }, { status: 403 })
   }
 
   try {
