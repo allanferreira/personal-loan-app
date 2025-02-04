@@ -4,7 +4,7 @@ import date from "@/utils/date"
 
 export const goalStepSchema = object({
   loan: number()
-    .transform((value, originalValue) => unformat(originalValue))
+    .transform((value, originalValue) => unformat(originalValue, "pt-BR"))
     .required("Campo obrigatório")
     .min(5000, "O valor mínimo do empréstimo é de R$ 5.000,00"),
   installments: number()
@@ -22,7 +22,7 @@ export const personalInfoStepSchema = object({
     .min(4, "Deve ser um nome de verdade"),
   income: number()
     .optional()
-    .transform((value, originalValue) => unformat(originalValue))
+    .transform((value, originalValue) => unformat(originalValue, "pt-BR"))
     .positive("Deve ser um número superior a zero"),
   birthday: dateYup()
     .transform((value) => value)

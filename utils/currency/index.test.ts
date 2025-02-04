@@ -3,7 +3,7 @@ import { unformat, format } from "./index"
 
 describe("currency: unformat", () => {
   it("should return a number when a currency value is passed", () => {
-    expect(unformat("R$ 20.000,00")).toBe(20000)
+    expect(unformat("R$ 20.000,00", "pt-BR")).toBe(20000)
     expect(unformat("$ 20,000.00", "en")).toBe(20000)
   })
 })

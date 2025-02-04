@@ -7,8 +7,8 @@ export function formValuesToApiFormat(
 ): PostLoanSimulationRequest {
   return {
     ...values,
-    income: unformat(values.income),
-    loan: unformat(values.loan),
+    income: unformat(values.income, "pt-BR"),
+    loan: unformat(values.loan, "pt-BR"),
     installments: Number(values.installments),
     birthday: new Date(values.birthday),
   }
